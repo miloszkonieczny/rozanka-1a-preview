@@ -12,4 +12,13 @@ Tested locally in the Codex in-app browser, using responsive viewport overrides;
 - No warning/error console entries observed. `node --check script.js` passed.
 - Source reviewed for unsupported services, business claims, prices and external runtime dependencies; none introduced. Photo provenance is documented separately.
 
-Limits: browser zoom shortcut testing was attempted but an exact 200% zoom level was not established, so 200% zoom is not claimed as verified. No screen-reader session, formal accessibility conformance audit or real-device testing. No deployed smoke test: user explicitly selected local preview plus GitHub source only. Owner approval remains pending.
+Limits: browser zoom shortcut testing was attempted but an exact 200% zoom level was not established, so 200% zoom is not claimed as verified. No screen-reader session, formal accessibility conformance audit or real-device testing. Initial delivery was local only; public deployment was subsequently authorized and checked as recorded below. Owner approval remains pending.
+
+## Public Netlify deployment
+
+- URL: https://rozanka-1a-preview.netlify.app/
+- Netlify project ID: 44f8c928-accc-476b-afd2-1515bd594e44; uploaded deployment: 6ade47a9ebe39c0142bf7c00.
+- Account dashboard confirmed Free plan and no saved credit card. Public-status dialog confirmed anyone can visit.
+- Unauthenticated HTTP retrieval returned the expected site HTML.
+- In-app browser smoke check confirmed Polish content, English switching, translated title/lang, all images loaded and no warning/error console entries. Noindex metadata retained.
+- Netlify adds its Powered by Netlify badge to the hosted page. No paid feature or custom domain enabled.

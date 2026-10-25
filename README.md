@@ -25,7 +25,7 @@ GitHub Pages documentation checked 2026-10-25:
 
 Pages restricts business/transaction-focused hosting. Suitability for this farm preview remains unresolved, so no Pages deployment is configured. A disclaimer alone does not resolve the restriction.
 
-User decision: keep the local preview and public GitHub repository for now; do not publish externally. Potential future alternative: Netlify Free, requiring a new hosting instruction and account access. Netlify explicitly permits commercial projects on Free; current Free pricing has a hard monthly limit with no auto recharge. Never select a paid plan, enter payment details, or enable billable services. Sources:
+Published with subsequent user authorization on Netlify Free: https://rozanka-1a-preview.netlify.app/ . The account Free plan and absence of a saved payment card were verified in the dashboard. Uploaded only the static site files via Netlify Drop, then set the project public. GitHub remains the source repository; automatic GitHub deployments are not connected. Future source changes require a fresh manual upload. Netlify explicitly permits commercial projects on Free; current Free pricing has a hard monthly limit with no auto recharge. Never select a paid plan, enter payment details, or enable billable services. Sources:
 - https://www.netlify.com/blog/introducing-netlify-free-plan/
 - https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/credit-based-pricing-plans/
 
