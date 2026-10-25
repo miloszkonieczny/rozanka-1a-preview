@@ -1,0 +1,34 @@
+# Różanka 1a — website preview
+
+Small bilingual, buildless static website for owner review. Polish is the default; the PL / EN buttons update visible text, accessible labels, page language, metadata and title. No framework, analytics, form, backend or paid API.
+
+## Local preview
+
+From this directory, run `python3 -m http.server 4173 --bind 127.0.0.1` and open http://127.0.0.1:4173/. No install or build step is needed. The files also work under a repository URL prefix.
+
+## Editing
+
+- `index.html`: Polish content, with English in `data-en`, `data-en-label` and `data-en-alt` attributes. Keep matching translations together. Supplied contacts are deliberately `123-456-789` and `sample@roznaka.com`.
+- `styles.css`: palette, spacing and responsive layouts.
+- `script.js`: language controls and translated metadata/title. Polish remains present in the original HTML without JavaScript; nonfunctional language controls stay hidden.
+- `assets/`: original logo motif and locally stored illustrative photograph. See `ASSET_SOURCES.md`.
+
+Before any real launch, the owner must confirm the final offer, replace sample contacts and hours, confirm the full postal address and coordinates, review the imagery/logo and explicitly approve the site. The coordinates are owner-supplied, not independently verified. No prices or additional services are represented.
+
+## Publication
+
+Target new public source repository: `miloszkonieczny/rozanka-1a-preview` (name confirmed by user). Publication is a separate step from pushing source.
+
+GitHub Pages documentation checked 2026-10-25:
+- https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages
+- https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits
+
+Pages restricts business/transaction-focused hosting. Suitability for this farm preview remains unresolved, so no Pages deployment is configured. A disclaimer alone does not resolve the restriction.
+
+User decision: keep the local preview and public GitHub repository for now; do not publish externally. Potential future alternative: Netlify Free, requiring a new hosting instruction and account access. Netlify explicitly permits commercial projects on Free; current Free pricing has a hard monthly limit with no auto recharge. Never select a paid plan, enter payment details, or enable billable services. Sources:
+- https://www.netlify.com/blog/introducing-netlify-free-plan/
+- https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/credit-based-pricing-plans/
+
+After hosting approval, publish `index.html`, `styles.css`, `script.js` and `assets/` as static files with no build command, using the host's free HTTPS URL. Perform a smoke check of the actual deployed URL before reporting it live. Do not configure a custom domain.
+
+The `noindex, nofollow` metadata discourages indexing; it does NOT make the page private. A public repository and preview can be accessed by anyone. Owner approval has not yet been given.
