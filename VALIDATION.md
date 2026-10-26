@@ -31,3 +31,11 @@ Limits: browser zoom shortcut testing was attempted but an exact 200% zoom level
 - On the published Netlify page, checked Polish and English titles, document language, translated map context, requested address and all three loaded images. The hero image reported a natural width of 1280 pixels.
 - `node --check script.js`, `git diff --check` and source assertions passed. No real-device or formal accessibility audit was performed for this refinement.
 - Updated production deployment: `6adeeb83ea19961eb7e1d6e2` on the existing Netlify project; URL unchanged.
+
+## Approved-design implementation — 2026-10-26
+
+- At 1440 CSS pixels, visually inspected the two-column hero: the trout is centered in an underwater riverbed scene, the rounded upper-left photo corner is retained, and the photo fills its frame without blank horizontal bands. Screenshot: `../rozanka-1a-desktop-1440.png`.
+- At 390 CSS pixels, inspected the stacked hero and a separate scrolled photo view. The whole fish remains visible after adjusting mobile image positioning; no horizontal document overflow was observed. Screenshots: `../rozanka-1a-mobile-390.png` and `../rozanka-1a-mobile-photo-390.png`.
+- Browser inspection confirmed the Polish headline is exactly three lines, `Hodowla` / `pstrągów` / `tęczowych`, with no terminal period, normal Georgia styling and computed color `rgb(32, 61, 49)` (`#203d31`). The English headline is `Rainbow` / `trout farm` with no terminal period and the same styling.
+- Confirmed the new 1280 × 853 image loads, English switching works, the contact address is unchanged in both locations, and the OpenStreetMap embed source and marker coordinates remain intact. No browser warning/error logs were recorded.
+- The purported approved visualization was not present in the supplied files or follow-up message, so a direct image-to-image comparison and similarity score could not be performed. The photograph and layout were judged against the written design criteria only; exact visual-reference fidelity remains unverified.
