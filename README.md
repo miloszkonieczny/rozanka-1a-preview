@@ -13,7 +13,7 @@ From this directory, run `python3 -m http.server 4173 --bind 127.0.0.1` and open
 - `script.js`: language controls and translated metadata/title. Polish remains present in the original HTML without JavaScript; nonfunctional language controls stay hidden.
 - `assets/`: original logo motif and the exact owner-supplied approved hero artwork. See `ASSET_SOURCES.md`.
 
-Before any real launch, the owner must confirm the final offer, replace sample contacts and hours, verify the supplied address and approximate coordinates, review the imagery/logo and explicitly approve the site. The coordinates are owner-supplied, not independently verified. No prices or additional services are represented.
+The business owner has confirmed the official website address as Różanka 1A, 57-530 Międzylesie, Polska, and designated 50°11′39.1″N, 16°38′16.4″E as the business location. Before any real launch, the owner must confirm the final offer, replace sample phone, email and hours, verify the exact entrance for navigation, review the imagery/logo and explicitly approve the site. No prices or additional services are represented.
 
 ## Publication
 
@@ -35,4 +35,4 @@ The `noindex, nofollow` metadata discourages indexing; it does NOT make the page
 
 ## Map
 
-The contact section uses the official Google Maps sharing embed for the owner-supplied approximate coordinates `50.194194, 16.637889` (`50°11'39.1"N 16°38'16.4"E`). The embedded map coordinate fields, Google Maps fallback and directions links use those same coordinates. The map's pin should be visually confirmed in a browser after deployment. The marker does not identify a verified building or entrance. The embed is lazy-loaded, needs a visitor connection to Google Maps, and may expose the visitor IP to Google. No paid Maps API or API key is used.
+The contact section uses the Google Maps sharing embed for the business location designated by the owner: `50.194194, 16.637889` (`50°11'39.1"N 16°38'16.4"E`). The embedded map coordinate fields, Google Maps fallback and directions links use those same coordinates. The owner confirms the address and designated coordinates; the exact entrance has not been independently verified. The map's marker should be visually confirmed in a browser after deployment. The embed is lazy-loaded, needs a visitor connection to Google Maps, and may expose the visitor IP to Google. No paid Maps API or API key is used.
