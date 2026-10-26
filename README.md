@@ -11,7 +11,7 @@ From this directory, run `python3 -m http.server 4173 --bind 127.0.0.1` and open
 - `index.html`: Polish content, with English in `data-en`, `data-en-label` and `data-en-alt` attributes. Keep matching translations together. Supplied contacts are deliberately `123-456-789` and `sample@roznaka.com`.
 - `styles.css`: palette, spacing and responsive layouts.
 - `script.js`: language controls and translated metadata/title. Polish remains present in the original HTML without JavaScript; nonfunctional language controls stay hidden.
-- `assets/`: original logo motif and locally stored illustrative photograph. See `ASSET_SOURCES.md`.
+- `assets/`: original logo motif and the exact owner-supplied approved hero artwork. See `ASSET_SOURCES.md`.
 
 Before any real launch, the owner must confirm the final offer, replace sample contacts and hours, verify the supplied address and approximate coordinates, review the imagery/logo and explicitly approve the site. The coordinates are owner-supplied, not independently verified. No prices or additional services are represented.
 
@@ -35,4 +35,4 @@ The `noindex, nofollow` metadata discourages indexing; it does NOT make the page
 
 ## Map
 
-The contact section embeds an OpenStreetMap map with a marker at owner-supplied approximate coordinates and lazy loading. The marker is not a verified building or entrance. A direct OpenStreetMap link remains available if the iframe cannot load. The existing directions link is preserved. The embed requires a visitor connection to OpenStreetMap and may expose the visitor IP to that service.
+The contact section uses the official Google Maps sharing embed for the owner-supplied approximate coordinates `50.183333, 16.633333`. The Google Maps fallback and directions links use those same coordinates. The marker does not identify a verified building or entrance. The embed is lazy-loaded, needs a visitor connection to Google Maps, and may expose the visitor IP to Google. No paid Maps API or API key is used.
