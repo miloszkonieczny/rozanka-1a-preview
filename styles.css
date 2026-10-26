@@ -3,3 +3,15 @@
 .header{position:sticky;top:0;z-index:5;background:var(--paper)}html{scroll-padding-top:140px}
 
 html{overflow-anchor:none;scroll-behavior:auto}
+
+/* Targeted address, photograph, and location refinements. */
+.hero-photo>img{object-fit:contain;object-position:center;background:#f6f4ed}
+.photo-label{color:var(--ink);text-shadow:none}
+.address,.contact-address{font-style:normal;font-size:13px;line-height:1.5}
+.address{margin-top:9px;color:var(--muted)}
+.contact-address{margin-top:23px;max-width:240px}
+.map-frame{height:280px;overflow:hidden;margin-top:22px;border:1px solid var(--line);border-radius:4px;background:#e1e8df}
+.map-frame iframe{display:block;width:100%;height:100%;border:0}
+.map-fallback{display:inline-block;margin-top:9px;font-size:11px;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:650px){.map-frame{height:260px}}
+.hero-photo>img{mix-blend-mode:multiply}

@@ -1,4 +1,4 @@
-# Różanka 1a — website preview
+# Różanka 1A — website preview
 
 Small bilingual, buildless static website for owner review. Polish is the default; the PL / EN buttons update visible text, accessible labels, page language, metadata and title. No framework, analytics, form, backend or paid API.
 
@@ -13,7 +13,7 @@ From this directory, run `python3 -m http.server 4173 --bind 127.0.0.1` and open
 - `script.js`: language controls and translated metadata/title. Polish remains present in the original HTML without JavaScript; nonfunctional language controls stay hidden.
 - `assets/`: original logo motif and locally stored illustrative photograph. See `ASSET_SOURCES.md`.
 
-Before any real launch, the owner must confirm the final offer, replace sample contacts and hours, confirm the full postal address and coordinates, review the imagery/logo and explicitly approve the site. The coordinates are owner-supplied, not independently verified. No prices or additional services are represented.
+Before any real launch, the owner must confirm the final offer, replace sample contacts and hours, verify the supplied address and approximate coordinates, review the imagery/logo and explicitly approve the site. The coordinates are owner-supplied, not independently verified. No prices or additional services are represented.
 
 ## Publication
 
@@ -32,3 +32,7 @@ Published with subsequent user authorization on Netlify Free: https://rozanka-1a
 After hosting approval, publish `index.html`, `styles.css`, `script.js` and `assets/` as static files with no build command, using the host's free HTTPS URL. Perform a smoke check of the actual deployed URL before reporting it live. Do not configure a custom domain.
 
 The `noindex, nofollow` metadata discourages indexing; it does NOT make the page private. A public repository and preview can be accessed by anyone. Owner approval has not yet been given.
+
+## Map
+
+The contact section embeds an OpenStreetMap map with a marker at owner-supplied approximate coordinates and lazy loading. The marker is not a verified building or entrance. A direct OpenStreetMap link remains available if the iframe cannot load. The existing directions link is preserved. The embed requires a visitor connection to OpenStreetMap and may expose the visitor IP to that service.

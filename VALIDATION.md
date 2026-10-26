@@ -22,3 +22,12 @@ Limits: browser zoom shortcut testing was attempted but an exact 200% zoom level
 - Unauthenticated HTTP retrieval returned the expected site HTML.
 - In-app browser smoke check confirmed Polish content, English switching, translated title/lang, all images loaded and no warning/error console entries. Noindex metadata retained.
 - Netlify adds its Powered by Netlify badge to the hosted page. No paid feature or custom domain enabled.
+
+## Targeted refinement — 2026-10-26
+
+- Replaced all user-facing business-name instances with `Różanka 1A` (without a trailing period), including both languages, headings, navigation, footer, title and accessible image text. The requested address appears in both contact and location cards.
+- Replaced the hero JPEG with a 1280 × 486 public-domain USFWS Mountain-Prairie photograph identified as rainbow trout (*Oncorhynchus mykiss*); checked the image visually and recorded the source in `ASSET_SOURCES.md`.
+- Added a lazy-loaded OpenStreetMap embed with a marker at the owner-supplied approximate coordinates (50.183333, 16.633333), attribution, an external OpenStreetMap fallback link and the existing Google directions link. The embedded tiles and marker were visually visible on the published page; the exact entrance/building was not verified.
+- On the published Netlify page, checked Polish and English titles, document language, translated map context, requested address and all three loaded images. The hero image reported a natural width of 1280 pixels.
+- `node --check script.js`, `git diff --check` and source assertions passed. No real-device or formal accessibility audit was performed for this refinement.
+- Updated production deployment: `6adeeb83ea19961eb7e1d6e2` on the existing Netlify project; URL unchanged.
