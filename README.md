@@ -35,4 +35,4 @@ The `noindex, nofollow` metadata discourages indexing; it does NOT make the page
 
 ## Map
 
-The contact section uses the official Google Maps sharing embed for the owner-supplied approximate coordinates `50.183333, 16.633333`. The Google Maps fallback and directions links use those same coordinates. The marker does not identify a verified building or entrance. The embed is lazy-loaded, needs a visitor connection to Google Maps, and may expose the visitor IP to Google. No paid Maps API or API key is used.
+The contact section uses the official Google Maps sharing embed for the owner-supplied approximate coordinates `50.194194, 16.637889` (`50°11'39.1"N 16°38'16.4"E`). The embedded map coordinate fields, Google Maps fallback and directions links use those same coordinates. The map's pin should be visually confirmed in a browser after deployment. The marker does not identify a verified building or entrance. The embed is lazy-loaded, needs a visitor connection to Google Maps, and may expose the visitor IP to Google. No paid Maps API or API key is used.
